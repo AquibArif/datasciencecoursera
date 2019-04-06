@@ -1,0 +1,37 @@
+A graphic device ?
+A place where you can make a plot appear
+eg a window on your computer
+a pdf page or png jpeg image or a sclable vector graphics (SVG) file
+
+using R screen device is launched using functions 
+on mac ---quartz()
+windows ---windows()
+unix/linux --- x11()
+
+
+functions like plot xyplot and qplot will sent plot to screen device 
+
+we can make a plot in file device
+
+how does a plot created ?
+1. call plot function like plot ,xyplot and qplot
+2. annotate
+
+explicit launch a graphic device in case of plotting in a file .will not go to screen.
+save the code and paste it whenever you need to see the plot.
+always close plot using dev.off() function.
+
+There are two basic types of file devices: vector and bitmap devices
+vector formats
+1. pdf
+2. svg
+3. win.metafile
+4. postscript
+
+Bitmap formats
+1. png : portable network graphics
+2. jpeg : 
+3. tiff
+4. bmp : a native windows bitmapped formats
+
+
